@@ -1,15 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Seagull</title>
+  <title>Pigeon</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <%= favicon_link_tag 'pigeon-square.png' %>
 </head>
 <body>
 <%= render partial: 'layouts/header.html.erb' %>
+<% if notice %>
+      <p class="alerttop alert alert-success"><%= notice %></p>
+    <% end %>
+    <% if alert %>
+      <p class="alerttop alert alert-danger"><%= alert %></p>
+    <% end %>
 <%= yield %>
-<%= render partial: 'layouts/footer.html.erb' %>
 
 </body>
 </html>

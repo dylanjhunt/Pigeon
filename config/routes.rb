@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
+  resources :squawks
   devise_for :users
 
-  root 'squawk#index'
+  root 'squawks#index'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

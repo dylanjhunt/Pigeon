@@ -1,0 +1,22 @@
+<div class="col-xs-12">
+<%= render partial: 'squawks/profile.html.erb' %>
+<div class="col-xs-12 col-sm-6 squawks">
+    <% @squawks.each do |squawk| %>
+    <div class="squawk">
+      <div class="userinfo">
+    <%= image_tag 'thumbnail.jpg', class: 'thumbnail' %>
+        <%= squawk.user %>
+      </div>
+        <h2><%= squawk.title %></h2>
+        <p><%= squawk.created_at %></p>
+        <div class="pull-right">
+        <a href="<%= edit_squawk_path(squawk) %>"><i class="fa fa-pencil-square-o"></i> |
+        <%= link_to 'Delete', squawk, method: :delete, data: { confirm: 'Are you sure?' } %>
+      </div>
+      </div>
+    <% end %>
+<br>
+</div>
+<%= render partial: 'squawks/others.html.erb' %>
+
+</div>

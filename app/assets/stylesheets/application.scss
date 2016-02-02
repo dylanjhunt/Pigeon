@@ -19,6 +19,71 @@
 @import "font-awesome-sprockets";
 @import "font-awesome";
 
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+h1 {
+    font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  font-style: bold;
+  font-variant: normal;
+  font-weight: 500;
+  line-height: 26.4px;
+}
+h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-style: bold;
+  font-variant: normal;
+  font-weight: 500;
+  line-height: 15.4px;
+}
+a {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+} 
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+}
+p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+blockquote {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 21px;
+  font-style: bold;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 30px;
+}
+pre {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 18.5714px;
+}
+
+
+
+
+@media (min-width: 993px) {
+    .mobilelogout{
+        display: none !important;
+    }
+}
+
+
+
+
 .logo {
   height: 40px;
   margin-top: -10px;
@@ -53,7 +118,9 @@
   border-radius: 4px;
   padding: none;
   margin: none;
-  margin-top: -5px;
+  margin-top: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .search-input {
@@ -77,4 +144,242 @@
   margin-top: -5px;
   background-color: #11b747;
   height: 40px;
+}
+
+.squawks {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.squawk {
+  width: 100%;
+  padding: 20px;
+  border-bottom: 1px solid #ccc; 
+  margin-bottom: 10px;
+}
+
+.squawk h3 {
+  margin-left: 20px;
+}
+.others {
+  height: 500px;
+  border-radius: 5px;
+}
+
+.pigeonbox {
+  border-radius: 5px;
+  margin-right: 10px;
+  margin-left: 10px; 
+}
+
+.twPc-div {
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid #e1e8ed;
+    border-radius: 6px;
+    height: 200px;
+    max-width: 340px; // orginal twitter width: 290px;
+}
+.twPc-bg {
+    background-image: url("https://pbs.twimg.com/profile_banners/50988711/1384539792/600x200");
+    background-position: 0 50%;
+    background-size: 100% auto;
+    border-bottom: 1px solid #e1e8ed;
+    border-radius: 4px 4px 0 0;
+    height: 95px;
+    width: 100%;
+}
+.twPc-block {
+    display: block !important;
+}
+.twPc-button {
+    margin: -35px -10px 0;
+    text-align: right;
+    width: 100%;
+}
+.twPc-avatarLink {
+    background-color: #fff;
+    border-radius: 6px;
+    display: inline-block !important;
+    float: left;
+    margin: -30px 5px 0 8px;
+    max-width: 100%;
+    padding: 1px;
+    vertical-align: bottom;
+}
+.twPc-avatarImg {
+    border: 2px solid #fff;
+    border-radius: 7px;
+    box-sizing: border-box;
+    color: #fff;
+    height: 72px;
+    width: 72px;
+}
+.twPc-divUser {
+    margin: 5px 0 0;
+}
+.twPc-divName {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21px;
+}
+.twPc-divName a {
+    color: inherit !important;
+}
+.twPc-divStats {
+    margin-left: 11px;
+    padding: 10px 0;
+}
+.twPc-Arrange {
+    box-sizing: border-box;
+    display: table;
+    margin: 0;
+    min-width: 100%;
+    padding: 0;
+    table-layout: auto;
+}
+ul.twPc-Arrange {
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+}
+.twPc-ArrangeSizeFit {
+    display: table-cell;
+    padding: 0;
+    vertical-align: top;
+}
+.twPc-ArrangeSizeFit a:hover {
+    text-decoration: none;
+}
+.twPc-StatValue {
+    display: block;
+    font-size: 18px;
+    font-weight: 500;
+    transition: color 0.15s ease-in-out 0s;
+}
+.twPc-StatLabel {
+    color: #8899a6;
+    font-size: 10px;
+    letter-spacing: 0.02em;
+    overflow: hidden;
+    text-transform: uppercase;
+    transition: color 0.15s ease-in-out 0s;
+}
+
+.profile {
+    border-radius: 7px;
+    height: 72px;
+    width: 72px;
+    border: 2px solid #fff;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+.signupform {
+  text-align: left;
+  margin-top:10px;
+}
+
+.field {
+  margin-top:20px;
+  text-align: left;
+}
+
+.post-container{
+    position: relative;
+    float:none;
+    margin: 10px auto;
+    padding: 0px 40px 40px;
+    text-align: center;
+    background: #fff;
+    margin-top: 25px;
+    border-bottom: 1px solid #ccc;
+}
+
+.form-box input{
+    width: 100%;
+    padding: 10px;
+    height:50px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition:0.2s ease-in-out;
+    background: #fff;
+    color:#000;
+}
+
+.form-box input:focus{
+    outline: 0;
+}
+
+.form-box input[type="text"]{
+    border-radius: 5px 5px 0 0;
+    color: #000;
+}
+
+.form-box img{
+  height:50px;
+    margin-top: 25px;
+}
+
+.form-box button.login{
+    margin-top:15px;
+    padding: 10px 20px;
+}
+
+.login-container{
+    position: relative;
+    float:none;
+    margin: 80px auto;
+    padding: 0px 40px 40px;
+    text-align: center;
+    background: #fff;
+    border: 1px solid #ccc;
+    margin-top: 150px;
+}
+
+
+@media (max-width: 993px) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin: 7.5px -15px;
+    }
+    .navbar-nav>li {
+        float: none;
+        text-align: center;
+        background-color: #fff;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;        
+    }
+    .navbar-text {
+        float: none;
+        margin: 15px 0;
+    }
+    /* since 3.1.0 */
+    .navbar-collapse.collapse.in { 
+        display: block!important;
+    }
+    .collapsing {
+        overflow: hidden!important;
+    }
+    .avatarsmall {
+        display:none;
+    }
+    .social {
+    margin-top: 15px;
+}
 }
