@@ -42,7 +42,7 @@ h3 {
 a {
     font-family: 'Montserrat', sans-serif;
     font-weight: 900;
-} 
+}
 h2 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 900;
@@ -154,7 +154,7 @@ pre {
 .squawk {
   width: 100%;
   padding: 20px;
-  border-bottom: 1px solid #ccc; 
+  border-bottom: 1px solid #ccc;
   margin-bottom: 10px;
 }
 
@@ -169,7 +169,7 @@ pre {
 .pigeonbox {
   border-radius: 5px;
   margin-right: 10px;
-  margin-left: 10px; 
+  margin-left: 10px;
 }
 
 .twPc-div {
@@ -342,6 +342,9 @@ ul.twPc-Arrange {
     .navbar-header {
         float: none;
     }
+    .desktoppartial {
+      display: none;
+    }
     .navbar-toggle {
         display: block;
     }
@@ -363,14 +366,14 @@ ul.twPc-Arrange {
     }
     .navbar-nav>li>a {
         padding-top: 10px;
-        padding-bottom: 10px;        
+        padding-bottom: 10px;
     }
     .navbar-text {
         float: none;
         margin: 15px 0;
     }
     /* since 3.1.0 */
-    .navbar-collapse.collapse.in { 
+    .navbar-collapse.collapse.in {
         display: block!important;
     }
     .collapsing {

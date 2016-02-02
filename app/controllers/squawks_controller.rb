@@ -1,28 +1,20 @@
 class SquawksController < ApplicationController
   before_action :set_squawk, only: [:show, :edit, :update, :destroy]
 
-  # GET /squawks
-  # GET /squawks.json
   def index
     @squawks = Squawk.all.order("created_at DESC")
   end
 
-  # GET /squawks/1
-  # GET /squawks/1.json
   def show
   end
 
-  # GET /squawks/new
   def new
     @squawk = Squawk.new
   end
 
-  # GET /squawks/1/edit
   def edit
   end
 
-  # POST /squawks
-  # POST /squawks.json
   def create
     @squawk = Squawk.new(squawk_params)
 
@@ -37,8 +29,6 @@ class SquawksController < ApplicationController
     end
   end
 
-  # PATCH/PUT /squawks/1
-  # PATCH/PUT /squawks/1.json
   def update
     respond_to do |format|
       if @squawk.update(squawk_params)
@@ -51,8 +41,6 @@ class SquawksController < ApplicationController
     end
   end
 
-  # DELETE /squawks/1
-  # DELETE /squawks/1.json
   def destroy
     @squawk.destroy
     respond_to do |format|
@@ -62,12 +50,10 @@ class SquawksController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
     def set_squawk
       @squawk = Squawk.find(params[:id])
     end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
     def squawk_params
       params.require(:squawk).permit(:name, :title, :content)
     end

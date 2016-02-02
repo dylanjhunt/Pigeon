@@ -1,5 +1,7 @@
 <div class="col-xs-12">
+<div class="desktoppartial">
 <%= render partial: 'squawks/profile.html.erb' %>
+</div>
 <div class="col-xs-12 col-sm-6 squawks">
     <% @squawks.each do |squawk| %>
     <div class="squawk">
@@ -17,6 +19,5 @@
     <% end %>
 <br>
 </div>
-<%= render partial: 'squawks/others.html.erb' %>
 
 </div>
