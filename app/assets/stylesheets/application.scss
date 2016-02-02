@@ -73,8 +73,6 @@ pre {
 }
 
 
-
-
 @media (min-width: 993px) {
     .mobilelogout{
         display: none !important;
@@ -104,12 +102,12 @@ pre {
 .navbar-default .navbar-nav > li > a {
     color: #66757f;
     font-size: 14px;
-    margin-top: -5px;
 }
 
 .btn-success {
   background-color: #11b747;
   margin-left: -15px;
+  margin-top: -10px !important;
 }
 
 .thumbnail {
