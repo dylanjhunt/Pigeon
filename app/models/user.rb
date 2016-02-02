@@ -1,5 +1,4 @@
 class User < ActiveRecord::Base
-  devise :database_authenticatable, :registerable,
-         :recoverable, :rememberable, :trackable, :validatable
   has_many :squawks
+  devise :database_authenticatable, :registerable, :recoverable, :rememberable, :trackable, :validatable
 end

@@ -1,11 +1,11 @@
 class SquawksController < ApplicationController
-  before_action :set_squawk, only: [:show, :edit, :update, :destroy]
 
   def index
     @squawks = Squawk.all.order("created_at DESC")
   end
 
   def show
+    @squawk = Squawk.find_by_id(params[:id])
   end
 
   def new
@@ -13,10 +13,12 @@ class SquawksController < ApplicationController
   end
 
   def edit
+    @squawk = Squawk.find_by_id(params[:id])
   end
 
   def create
-    @squawk = Squawk.new(squawk_params)
+    @squawk = current_user.squawks.build(squawk_params)
+
 
     respond_to do |format|
       if @squawk.save
@@ -30,6 +32,7 @@ class SquawksController < ApplicationController
   end
 
   def update
+    @squawk = Squawk.find_by_id(params[:id])
     respond_to do |format|
       if @squawk.update(squawk_params)
         format.html { redirect_to @squawk, notice: 'Squawk was successfully updated.' }
@@ -42,6 +45,7 @@ class SquawksController < ApplicationController
   end
 
   def destroy
+    @squawk = Squawk.find(params[:id])
     @squawk.destroy
     respond_to do |format|
       format.html { redirect_to squawks_url, notice: 'Squawk was successfully destroyed.' }
