@@ -1,6 +1,5 @@
 class SquawksController < ApplicationController
   before_action :set_squawk, only: [:show, :edit, :update, :destroy]
-  before_action :authenticate_user!
 
   # GET /squawks
   # GET /squawks.json
