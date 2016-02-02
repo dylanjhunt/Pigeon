@@ -1,0 +1,80 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+.logo {
+  height: 40px;
+  margin-top: -10px;
+  position: absolute;
+  left: 50%;
+  margin-left: -12px;
+}
+
+.navbar {
+  height: 50px;
+}
+.navbar-default {
+  border-bottom: 1px solid rgba(0,0,0,0.15);
+  height: 46px;
+  position: relative;
+  width: 100%;
+}
+.navbar-default .navbar-nav > li > a {
+    color: #66757f;
+    font-size: 14px;
+    margin-top: -5px;
+}
+
+.btn-success {
+  background-color: #11b747;
+  margin-left: -15px;
+}
+
+.thumbnail {
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  padding: none;
+  margin: none;
+  margin-top: -5px;
+}
+
+.search-input {
+    display: block;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    height: 32px;
+    padding: 5px 27px 6px 12px;
+    font-size: 12px;
+    line-height: 1;
+    color: #292f33;
+    background-color: #f5f8fa;
+    border: 1px solid #e1e8ed;
+    border-radius: 21px;
+    transition: all .2s ease-in-out;
+    margin-top: 8px;
+}
+
+.btn-success {
+  margin-top: -5px;
+  background-color: #11b747;
+  height: 40px;
+}

@@ -1,0 +1,2 @@
+module SquawkHelper
+end
